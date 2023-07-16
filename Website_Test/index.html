@@ -68,13 +68,33 @@
         function textToSequences(text) {
             const cleanedText = text.replace(/[?!#"$%&=*@^:]/g, '');
             const words = cleanedText.toLowerCase().split(' ');
-            let sequence = words.map(word => tokenizer.word_index[word] || 0);
-
+            let sequence = [];
+            words.forEach(word => {
+                sequence.push(...recursiveTokenize(word));
+            });
             if (sequence.length < 100) {
                 sequence = [...Array(100 - sequence.length).fill(0), ...sequence];
             }
-
             return sequence;
+        }
+
+        function recursiveTokenize(word) {
+            for (let i = word.length; i > 0; i--) {
+                const candidate = word.substring(0, i);
+                if (tokenizer.word_index[candidate]) {
+                    if (i === word.length) {
+                        // The entire word is recognized by the tokenizer.
+                        return [tokenizer.word_index[candidate]];
+                    } else {
+                        // The first part of the word is recognized by the tokenizer.
+                        // We now attempt to tokenize the rest of the word.
+                        const rest = word.substring(i);
+                        return [tokenizer.word_index[candidate], ...recursiveTokenize(rest)];
+                    }
+                }
+            }
+            // No part of the word is recognized by the tokenizer.
+            return [0];
         }
 
         async function predictSentence() {
