@@ -64,6 +64,13 @@
             text-align: center;
 
         }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            border: red;
+        }
     </style>
 </head>
 
@@ -83,8 +90,10 @@
                 <small id="inputHelp" class="form-text text-muted">Tips: Du kan trykke Enter istedenfor å klikke på
                     "Sjekk"</small>
                 <p id="result" class="mt-3"></p>
-                <button id="goodButton" class="btn btn-success mt-3">Merk som positi</button>
-                <button id="badButton" class="btn btn-danger mt-3">Merk som negativ</button>
+                <div class="buttons">
+                    <button id="goodButton" class="btn btn-success mt-3">Merk som positiv</button>
+                    <button id="badButton" class="btn btn-danger mt-3">Merk som negativ</button>
+                </div>
                 <p id="counter" class="mt-3"></p>
                 <button id="downloadButton" class="btn btn-secondary mt-3">Last ned CSV</button>
             </div>
