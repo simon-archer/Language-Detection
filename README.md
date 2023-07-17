@@ -24,9 +24,7 @@ This indicates a somewhat imbalanced dataset, with significantly more "good" com
 
 ### 1. Clone the Repository
 
-Clone the repository to your local machine to start using the Language Detection tool.
-
-shCopy code
+Clone the repository to your local machine using the Language Detection tool.
 
 `git clone https://github.com/simon-archer/Language-Detection.git` 
 
@@ -34,17 +32,13 @@ shCopy code
 
 Use an HTTP server to serve the HTML file. For instance, if you have Python installed, you can use its built-in HTTP server:
 
-shCopy code
-
 `python -m http.server` 
 
 For Python 3, use:
 
-shCopy code
-
 `python3 -m http.server` 
 
-Next, open your web browser and navigate to `localhost:8000` or the port your server uses.
+Next, open your web browser and navigate to `localhost:8000` or your server's port.
 
 ### 3. Analyse Sentence Sentiment
 
@@ -60,10 +54,10 @@ Once you've marked multiple sentences, click the 'Download' button to save the d
 
 ## Important Note
 
-The paths to the model and tokenizer are currently set as 'Detection/language_detection_tfjs_model/model.json' and 'Training/path_to_save_your_tokenizer.json'. Ensure these files are placed correctly or modify the paths to align with your directory structure.
+The paths to the model and tokenizer are currently set as 'Detection/language_detection_tfjs_model/model.json' and 'Training/path_to_save_your_tokenizer.json.' Ensure these files are placed correctly or modify the paths to align with your directory structure.
 
 ## Contributing
 
-We welcome contributions! Whether it's bug reports, feature requests, or new PRs, your input is appreciated. Start a thread in the 'Issues' section for questions or discussions.
+We welcome contributions! Your input is appreciated, whether it's bug reports, feature requests, or new PRs. Start a thread in the 'Issues' section for questions or discussions.
 
-Remember, this tool's main focus is ensuring GDPR compliance by conducting analysis on the client-side. Any enhancement should keep this primary focus in mind.
+Remember, this tool's main focus is ensuring GDPR compliance by analyzing the client-side. Any enhancement should keep this primary focus in mind.
