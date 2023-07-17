@@ -7,13 +7,24 @@ One of the key features of this tool is its GDPR-compliant mechanism. As the sen
 
 ## Project Overview
 
-The application uses an input field to accept Norwegian sentences from users, runs sentiment analysis using a trained TensorFlow.js model, and returns sentiment scores. It also includes functionalities to manually label sentence sentiment and export the annotated dataset for further usage.
+The application uses an input field to accept user Norwegian sentences, runs sentiment analysis using a trained TensorFlow.js model, and returns sentiment scores. It also includes functionalities to manually label sentence sentiment and export the annotated dataset for further usage.
+
+This project utilizes a dataset from the Jigsaw Toxic Comment Classification Challenge on Kaggle, which has been translated into Norwegian. The dataset is released under the CC0 license, and Wikipedia's CC-SA-3.0 governs the underlying comment text.
+
+GPT-3.5 Turbo has generated additional samples.
+
+Please note that the dataset has approximately:
+
+85.63% "good" comments (represented by 0 in the 'bad' column)
+14.37% "bad" comments (represented by 1 in the 'bad' column)
+
+This indicates a somewhat imbalanced dataset, with significantly more "good" comments than "bad" ones.
 
 ## Setup and Usage
 
 ### 1. Clone the Repository
 
-To start using the Language Detection tool, clone the repository to your local machine.
+Clone the repository to your local machine to start using the Language Detection tool.
 
 shCopy code
 
