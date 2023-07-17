@@ -17,7 +17,7 @@ To start using the Language Detection tool, clone the repository to your local m
 
 shCopy code
 
-`git clone <repo-url>` 
+`git clone https://github.com/simon-archer/Language-Detection.git` 
 
 ### 2. Serve the HTML File
 
