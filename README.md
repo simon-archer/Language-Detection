@@ -13,10 +13,11 @@ This project utilizes a dataset from the Jigsaw Toxic Comment Classification Cha
 
 GPT-3.5 Turbo has generated additional samples.
 
+
 Please note that the dataset has approximately:
 
-85.63% "good" comments (represented by 0 in the 'bad' column)
-14.37% "bad" comments (represented by 1 in the 'bad' column)
+# 85.63% "good" comments (represented by 0 in the 'bad' column)
+# 14.37% "bad" comments (represented by 1 in the 'bad' column)
 
 This indicates a somewhat imbalanced dataset, with significantly more "good" comments than "bad" ones.
 
