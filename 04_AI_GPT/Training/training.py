@@ -66,5 +66,5 @@ model.fit(X_train_pad, y_train, epochs=10,
 # Save the model
 model.save('../Detection/language_detection')
 
-# Convert using this shell command run in the "Detection" folder
+# Convert the TensorFlow model to .JS using this shell command run in the "Detection" folder
 # tensorflowjs_converter --input_format=tf_saved_model ./language_detection ./language_detection_tfjs_model
