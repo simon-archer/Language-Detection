@@ -53,7 +53,7 @@ class InteractivePlot(Callback):
 
 
 # Load the data
-data = pd.read_csv('04_AI_GPT/Datasets/cleaned_data_new.csv')
+data = pd.read_csv('../Datasets/cleaned_data_new.csv')
 
 
 def clean_text(text):
